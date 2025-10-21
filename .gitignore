@@ -1,0 +1,5 @@
+private_key.asc
+__pycache__/
+*.pyc
+.DS_Store
+.env
