@@ -1,7 +1,7 @@
 import pgpy
 
 # This will load public key
-pubkey, _ = pgpy.PGPKey.from_file('public.asc')
+pubkey, _ = pgpy.PGPKey.from_file('public_key.asc')
 
 # This is the message that somebody creates to send over, we can make this input prompted also if we want.
 message = pgpy.PGPMessage.new("Hello, this is the message!")

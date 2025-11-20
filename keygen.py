@@ -16,13 +16,11 @@ key = pgpy.PGPKey.new(pgpy.constants.PubKeyAlgorithm.RSAEncryptOrSign, 2048)
 # creates a user id using name and email
 uid = pgpy.PGPUID.new(name, email)
 
-# adds user id to key and sets preferences
+# gives user id, says its allowed to sign and decrypt, prefered hash for signatures
 key.add_uid(
     uid,
     usage=[pgpy.constants.KeyFlags.Sign, pgpy.constants.KeyFlags.EncryptCommunications],
-    hashes=[pgpy.constants.HashAlgorithm.SHA256],
-    ciphers=[pgpy.constants.SymmetricKeyAlgorithm.AES256],
-    compression=[pgpy.constants.CompressionAlgorithm.ZLIB]
+    hashes=[pgpy.constants.HashAlgorithm.SHA256]
 )
 
 # saves private key to file
