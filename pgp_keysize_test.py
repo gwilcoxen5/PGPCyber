@@ -1,5 +1,8 @@
 import pgpy
 import time
+import warnings
+warnings.filterwarnings("ignore")
+
 
 #list of key sizes we chose to test, this is in bits
 key_sizes = [1024, 2048, 4096]

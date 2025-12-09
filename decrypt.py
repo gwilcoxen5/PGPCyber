@@ -1,4 +1,7 @@
 import pgpy
+import warnings
+warnings.filterwarnings("ignore")
+
 
 # This loads private key
 privkey, _ = pgpy.PGPKey.from_file('private_key.asc')

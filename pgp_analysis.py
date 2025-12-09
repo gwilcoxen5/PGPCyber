@@ -1,5 +1,8 @@
 import pgpy
 import time
+import warnings
+warnings.filterwarnings("ignore")
+
 
 # how many times each operation will repeat to get an average of them
 number_times = 5

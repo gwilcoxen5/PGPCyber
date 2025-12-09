@@ -1,7 +1,10 @@
 import pgpy
+import warnings
+warnings.filterwarnings("ignore")
+
 
 private_key_path = 'private_key.asc' # loc of priv key
-message_path = 'message.asc'   # loc of file you s/v
+message_path = 'plaintext.txt'
 signature_path = 'signature.asc' # where to save signature
 
 def main():

@@ -1,4 +1,7 @@
 import pgpy
+import warnings
+warnings.filterwarnings("ignore")
+
 
 # prompts user for input on name and email for signature later on
 # will be attached to a user id attached to key

@@ -1,4 +1,7 @@
 import pgpy
+import warnings
+warnings.filterwarnings("ignore")
+
 
 # This will load public key
 pubkey, _ = pgpy.PGPKey.from_file('public_key.asc')

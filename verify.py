@@ -1,7 +1,9 @@
 import pgpy
+import warnings
+warnings.filterwarnings("ignore")
 
 public_key_path = 'public_key.asc' # used to verify sig
-message_path = 'message.asc' # file
+message_path = 'plaintext.txt'
 signature_path = 'signature.asc'
 
 def main():
